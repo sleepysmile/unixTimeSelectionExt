@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "UnixTimeConverter",
+    "description": "Conver selection unixtime to format",
+    "version": "1.0",
+ 
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "main/html/popup.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+}
