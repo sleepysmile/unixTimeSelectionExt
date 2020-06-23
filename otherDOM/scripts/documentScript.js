@@ -1,1 +1,3 @@
-document.addEventListener('onmouseup')
+document.addEventListener('onmouseup', event => {
+    
+})
