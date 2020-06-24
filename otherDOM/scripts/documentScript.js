@@ -47,9 +47,7 @@ function getSelectionElement() {
 
 function getTime(unxiTime) {
     let dateObj = new Date();
-
     dateObj.setTime(unxiTime);
-    dateObj.setTi(unxiTime);
 
     return dateObj.format(configuration.savedTime);
 }
