@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <title>Test ext</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="/main/scripts/script.js"></script>
+    <link rel="stylesheet" href="/main/styles/style.css">
 </head>
 <body>
     <div class="content">
-        <input type="text" name="dataFormat" id="formatDateTime">
+        <form id="jsFormDate">
+            <div class="input-option">
+                <label for="formatDateTime">Формат для конвертирования</label>
+            </div>
+            <div class="input-option">
+                <input type="text" name="dataFormat" id="formatDateTime">
+            </div>
+            <div class="input-option">
+                <button type="submit">Запомнить</button>    
+            </div>
+        </form>
     </div>
 </body>
 </html>

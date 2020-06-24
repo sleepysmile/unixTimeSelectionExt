@@ -3,13 +3,31 @@
     "name": "UnixTimeConverter",
     "description": "Conver selection unixtime to format",
     "version": "1.0",
- 
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["otherDOM/scripts/documentScript.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["/main/scripts/background.js"],
+        "persistent": false
+      },
+
     "browser_action": {
         "default_icon": "icon.png",
-        "default_popup": "main/html/popup.html"
+        "default_popup": "/main/html/popup.html"
     },
 
     "permissions": [
-        "activeTab"
-    ]
+        "activeTab",
+        "storage",
+        "contextMenus"
+    ],
+
+    "icons": {
+        "16": "icon.png"
+    }
 }
