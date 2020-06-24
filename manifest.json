@@ -7,7 +7,8 @@
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*"],
-            "js": ["otherDOM/scripts/documentScript.js"]
+            "js": ["otherDOM/scripts/documentScript.js"],
+            "css": ["otherDOM/styles/documentCss.css"]
         }
     ],
 
