@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('#inputDate').addEventListener('input', function (e) {
         let dateContainer = document.querySelector('#formatFastDate');
         let date = new Date();
-        date.setTime(this.value);
+        let unixInt = Number.parseInt(this.value);
+	    date.setTime(unixInt * 1000);
 
         let forrmatingValue = date.toLocaleString('ru-RU', optionFormatting);
 
